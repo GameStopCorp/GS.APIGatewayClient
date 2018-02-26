@@ -8,8 +8,8 @@
     <ProjectGuid>{0E8E660F-36B8-4F46-83CA-D586F25C0A25}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GS.APIGatewayClient</RootNamespace>
-    <AssemblyName>GS.APIGatewayClient</AssemblyName>
+    <RootNamespace>GS.AWSAPIGatewayClient</RootNamespace>
+    <AssemblyName>GS.AWSAPIGatewayClient</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>SAK</SccProjectName>
@@ -67,8 +67,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AmazonSigV4Util.cs" />
-    <Compile Include="APIGatewayClient.cs" />
-    <Compile Include="IApiGatewayClient.cs" />
+    <Compile Include="AWSAPIGatewayClient.cs" />
+    <Compile Include="IAWSApiGatewayClient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

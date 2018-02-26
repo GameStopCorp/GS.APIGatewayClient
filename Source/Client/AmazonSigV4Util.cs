@@ -4,7 +4,7 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace GS.APIGatewayClient
+namespace GS.AWSAPIGatewayClient
 {
     public static class AmazonSigV4Util
     {

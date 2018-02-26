@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>GS.APIGatewayClientTests</id>
+    <version>1.0.0</version>
+    <title>AWS API Gateway Client Tests</title>
+    <authors>iSquad</authors>
+    <owners>GameStopCorp</owners>
+    <projectUrl>https://github.com/GameStopCorp/GS.APIGatewayClient</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A series of tests for the .NET (C#) AWS API Gateway client interface and signing utility.</description>
+  </metadata>
+</package>

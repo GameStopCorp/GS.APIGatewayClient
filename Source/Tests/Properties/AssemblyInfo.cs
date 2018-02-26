@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("GameStop.AWSAPIGatewayClient")]
-[assembly: AssemblyDescription("A .NET (C#) AWS API Gateway client interface and signing utility.")]
+[assembly: AssemblyTitle("GameStop.APIGatewayClientTests")]
+[assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("GameStop, Inc.")]
-[assembly: AssemblyProduct("GameStop.AWSAPIGatewayClient")]
-[assembly: AssemblyCopyright("Copyright © GameStop, Inc. 2017")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("GameStop.APIGatewayClientTests")]
+[assembly: AssemblyCopyright("Copyright © GameStop 2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("0e8e660f-36b8-4f46-83ca-d586f25c0a25")]
+[assembly: Guid("80e38919-0a95-40d9-9100-57836dea6026")]
 
 // Version information for an assembly consists of the following four values:
 //

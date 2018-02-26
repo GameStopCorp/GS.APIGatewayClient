@@ -6,9 +6,9 @@ using GameStop.StoreSystems.Logging;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace GS.APIGatewayClient
+namespace GS.AWSAPIGatewayClient
 {
-    public class APIGatewayClient : IAPIGatewayClient<object>
+    public class AWSAPIGatewayClient : IAWSAPIGatewayClient<object>
     {
         private const string AMZ_DATE = "X-Amz-Date";
         private readonly ILogging _logger;
@@ -23,7 +23,7 @@ namespace GS.APIGatewayClient
             get { return _client ?? (_client = new HttpClient()); }
         }
 
-        public APIGatewayClient(string host, string accessKey, string secretKey, ILogging logger)
+        public AWSAPIGatewayClient(string host, string accessKey, string secretKey, ILogging logger)
         {
             _logger = logger ?? throw new ArgumentNullException("logger");
 

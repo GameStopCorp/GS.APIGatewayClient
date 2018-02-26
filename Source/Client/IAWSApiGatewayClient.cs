@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json.Linq;
 
-namespace GS.APIGatewayClient
+namespace GS.AWSAPIGatewayClient
 {
-    public interface IAPIGatewayClient<T>
+    public interface IAWSAPIGatewayClient<T>
     {
         T Get(string canonicalPath, string queryString, Dictionary<string, string> headers = null);
         bool Put(string canonicalPath, string queryString, JObject updatedObject, Dictionary<string, string> headers = null);
