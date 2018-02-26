@@ -92,9 +92,9 @@ namespace GS.APIGatewayClient
             return response.IsSuccessStatusCode;
         }
 
-        public bool Delete(string canonicalPath, string queryString)
+        public bool Delete(string canonicalPath, string queryString, Dictionary<string, string> headers = null)
         {
-            Authorize("DELETE", canonicalPath, queryString);
+            Authorize("DELETE", canonicalPath, queryString, null, headers);
 
             var response = HttpClient.DeleteAsync(canonicalPath + queryString).Result;
 

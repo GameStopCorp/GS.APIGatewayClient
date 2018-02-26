@@ -12,6 +12,6 @@ namespace GS.APIGatewayClient
         T Get(string canonicalPath, string queryString, Dictionary<string, string> headers = null);
         bool Put(string canonicalPath, string queryString, JObject updatedObject, Dictionary<string, string> headers = null);
         bool Post(string canonicalPath, string queryString, JObject postObject, Dictionary<string, string> headers = null);
-        bool Delete(string canonicalPath, string queryString);
+        bool Delete(string canonicalPath, string queryString, Dictionary<string, string> headers = null);
     }
 }
