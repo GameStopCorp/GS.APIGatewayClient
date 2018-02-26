@@ -9,10 +9,5 @@
     <projectUrl>https://github.com/GameStopCorp/GS.APIGatewayClient</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A .NET (C#) AWS API Gateway client interface and signing utility.</description>
-    <dependencies>
-      <dependency id="Newtonsoft.Json" version="10.0.3" />
-      <dependency id="System.Net.Http" version="4.3.3" />
-      <dependency id="System.Net.Http.Formatting.Extension" version="5.2.3.0" />
-    </dependencies>
   </metadata>
 </package>
