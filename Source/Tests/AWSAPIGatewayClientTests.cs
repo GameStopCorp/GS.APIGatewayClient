@@ -38,11 +38,8 @@ namespace GS.AWSAPIGatewayClient.Tests
             var receiptDataPath = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "ReceiptData.json");
             var receiptData = File.ReadAllText(receiptDataPath);
             _receiptObject = JObject.FromObject(JsonConvert.DeserializeObject(receiptData));
-            if (!_receiptObject.TryGetValue("Id", out JToken idToken))
-            {
-                return false;
-            }
-            var messageId = ((((JValue)idToken) == null) ? "null" : ((JValue)idToken).Value.ToString());
+            if (!_receiptObject.TryGetValue("Id", out JToken idToken)) return false;
+            var messageId = (JValue)idToken == null ? "null" : ((JValue)idToken).Value.ToString();
 
             var configPath = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Config.json");
             var config = File.ReadAllText(configPath);
