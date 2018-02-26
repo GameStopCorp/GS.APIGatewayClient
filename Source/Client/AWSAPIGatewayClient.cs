@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Net.Http.Headers;
-using GameStop.StoreSystems.Logging;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
@@ -11,7 +10,6 @@ namespace GS.AWSAPIGatewayClient
     public class AWSAPIGatewayClient : IAWSAPIGatewayClient<object>
     {
         private const string AMZ_DATE = "X-Amz-Date";
-        private readonly ILogging _logger;
 
         private string Host;
         private string AccessKey;
@@ -23,10 +21,8 @@ namespace GS.AWSAPIGatewayClient
             get { return _client ?? (_client = new HttpClient()); }
         }
 
-        public AWSAPIGatewayClient(string host, string accessKey, string secretKey, ILogging logger)
+        public AWSAPIGatewayClient(string host, string accessKey, string secretKey)
         {
-            _logger = logger ?? throw new ArgumentNullException("logger");
-
             Host = host;
             AccessKey = accessKey;
             SecretKey = secretKey;

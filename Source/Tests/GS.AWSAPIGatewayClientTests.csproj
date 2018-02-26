@@ -48,12 +48,6 @@
     <Reference Include="Castle.Windsor, Version=3.3.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
       <HintPath>..\packages\Castle.Windsor.3.3.0\lib\net45\Castle.Windsor.dll</HintPath>
     </Reference>
-    <Reference Include="GameStop.StoreSystems.Logging, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\StoreSystems.Logging.4.0.1\lib\net45\GameStop.StoreSystems.Logging.dll</HintPath>
-    </Reference>
-    <Reference Include="GameStop.StoreSystems.Logging.log4net, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\StoreSystems.Logging.log4net.4.0.2\lib\net45\GameStop.StoreSystems.Logging.log4net.dll</HintPath>
-    </Reference>
     <Reference Include="GameStop.StoreSystems.UnitTesting, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\StoreSystems.UnitTesting.2.0.0\lib\net45\GameStop.StoreSystems.UnitTesting.dll</HintPath>
     </Reference>

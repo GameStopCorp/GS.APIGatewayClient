@@ -9,13 +9,12 @@ Install-Package GS.AWSAPIGatewayClient
 
 Installing the package will also install:
   - Newtonsoft.Json
-  - GS.StoreSystems.Logging
   - System.Net.Http
   - System.Net.Http.Formatting.Extension
 
 # Implementation
 ```
-var client = new AWSAPIGatewayClient<T>([string hostname], [string accessKey], [string secretKey], [ILogging logger]);
+var client = new AWSAPIGatewayClient<T>([string hostname], [string accessKey], [string secretKey]);
 
 bool postSuccess = client.Post([string canonicalPath], [string queryString], [JObject postObject], [Dictonary<string, string> headers = null]);
 bool putSuccess = client.Put([string canonicalPath], [string queryString], [JObject updateObject], [Dictonary<string, string> headers = null]);

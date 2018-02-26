@@ -8,7 +8,6 @@ using System.IO;
 using System.Reflection;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using GameStop.StoreSystems.Logging;
 using Moq;
 
 namespace GS.AWSAPIGatewayClient.Tests
@@ -21,7 +20,7 @@ namespace GS.AWSAPIGatewayClient.Tests
     [TestClass()]
     public class AWSAPIGatewayClientTests
     {
-        private AWSAPIGatewayClient _apiGatewayClient;
+        private GS.AWSAPIGatewayClient.AWSAPIGatewayClient _apiGatewayClient;
         private JObject _receiptObject;
 
         private bool IsInitialized
@@ -36,8 +35,6 @@ namespace GS.AWSAPIGatewayClient.Tests
         {
             if (IsInitialized) return true;
 
-            var logger = new Mock<ILogging>().Object;
-
             var receiptDataPath = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "ReceiptData.json");
             var receiptData = File.ReadAllText(receiptDataPath);
             _receiptObject = JObject.FromObject(JsonConvert.DeserializeObject(receiptData));
@@ -48,7 +45,7 @@ namespace GS.AWSAPIGatewayClient.Tests
             var config = File.ReadAllText(configPath);
             var configObject = JsonConvert.DeserializeObject<Config>(config);
 
-            _apiGatewayClient = new AWSAPIGatewayClient(configObject.host, configObject.accessKey, configObject.secretKey, logger);
+            _apiGatewayClient = new GS.AWSAPIGatewayClient.AWSAPIGatewayClient(configObject.host, configObject.accessKey, configObject.secretKey);
 
             return true;
         }
