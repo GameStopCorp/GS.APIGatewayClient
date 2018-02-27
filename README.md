@@ -11,6 +11,10 @@ Installing the package will also install:
   - Newtonsoft.Json
   - System.Net.Http
   - System.Net.Http.Formatting.Extension
+  - System.Security.Cryptography.Algorithms
+  - System.Security.Cryptography.Encoding
+  - System.Security.Cryptography.Primitives
+  - System.Security.Cryptography.X509Certificates
 
 # Implementation
 ```
